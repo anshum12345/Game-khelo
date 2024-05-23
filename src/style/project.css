@@ -1,0 +1,90 @@
+#projects {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.my-header {
+  font-size: 4rem;
+  text-align: center;
+  /* color: #333; */
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-content a {
+  display: block;
+  margin: 5px 0;
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-header {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card-content h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* New styles to add padding between image and link */
+.card img {
+  margin-bottom: 15px;
+}
+
+.card-content a {
+  margin-top: 15px; /* Added margin-top to create space above the link */
+}
