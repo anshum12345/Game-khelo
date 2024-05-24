@@ -3,6 +3,12 @@
   max-width: 1200px;
   margin: auto;
 }
+/* Projects.css */
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 
 .my-header {
   font-size: 4rem;
@@ -87,4 +93,28 @@
 
 .card-content a {
   margin-top: 15px; /* Added margin-top to create space above the link */
+}
+
+.my-header {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rules-link {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal-content {
+  text-align: left;
 }
